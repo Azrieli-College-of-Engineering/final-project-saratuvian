@@ -79,6 +79,7 @@ import { applyCoupon } from './routes/coupon'
 import dataErasure from './routes/dataErasure'
 import { dataExport } from './routes/dataExport'
 import { retrieveBasket } from './routes/basket'
+import { retrieveOrderDetails } from './routes/orderDetails'
 import { searchProducts } from './routes/search'
 import { trackOrder } from './routes/trackOrder'
 import { saveLoginIp } from './routes/saveLoginIp'
@@ -594,6 +595,8 @@ restoreOverwrittenFilesWithOriginals().then(() => {
   app.get('/rest/user/authentication-details', authenticatedUsers())
   app.get('/rest/products/search', searchProducts())
   app.get('/rest/basket/:id', retrieveBasket())
+  app.use('/rest/order-details', security.isAuthorized())
+  app.get('/rest/order-details/:id', retrieveOrderDetails())
   app.post('/rest/basket/:id/checkout', placeOrder())
   app.put('/rest/basket/:id/coupon/:coupon', applyCoupon())
   app.get('/rest/admin/application-version', retrieveAppVersion())

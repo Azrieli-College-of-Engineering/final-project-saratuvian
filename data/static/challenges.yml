@@ -1214,6 +1214,18 @@
   tutorial:
     order: 10
 -
+  name: 'View Order Details'
+  category: 'Broken Access Control'
+  tags:
+    - Access Control
+  description: 'Access another user''s order details by modifying the order ID.'
+  difficulty: 3
+  hints:
+    - 'Observe the API calls in the browser developer tools.'
+    - 'Try modifying numeric identifiers in the request URL.'
+  mitigationUrl: 'https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html'
+  key: orderIdorChallenge
+-  
   name: 'Vulnerable Library'
   category: 'Vulnerable Components'
   tags:
