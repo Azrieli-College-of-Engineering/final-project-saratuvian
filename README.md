@@ -1,4 +1,4 @@
-# Final Project – IDOR Attack Demonstration
+# Final Project - IDOR Attack Demonstration
 
 Name: Sara Tuvian  
 Institution: Azrieli College of Engineering Jerusalem
@@ -17,7 +17,7 @@ by modifying the order ID parameter.
 
 ## Vulnerability
 
-Broken Access Control – IDOR
+Broken Access Control - IDOR
 
 Example request:
 
