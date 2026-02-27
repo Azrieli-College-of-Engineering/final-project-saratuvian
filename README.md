@@ -118,7 +118,7 @@ routes/
 frontend/
 server.ts
 
-final-project-idor-screenshots/
+01-final-project-idor-screenshots/
 
 Final_Project_Report.pdf
 
